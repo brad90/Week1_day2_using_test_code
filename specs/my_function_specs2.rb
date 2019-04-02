@@ -40,14 +40,26 @@ def test_am_i_safe_to_drive()
 end
 
 def test_how_long_is_the_string()
-  string_length = string_length(20,50)
-  assert_equal(70,string_length)
+  string_length_result = string_length(20,50)
+  assert_equal(70,string_length_result)
 end
 
 def test_sweets_eaten()
   sweets_remaining = sweets_remaining (50,20)
   assert_equal(30, sweets_remaining)
 end
+
+def test_day_of_the_week()
+  what_day_is_it = day_of_the_week(3)
+  assert_equal("Wed",what_day_is_it)
+end
+
+def test_am_i_too_fat()
+  am_i_too_fat_result = too_fat(60)
+  assert_equal(false, test_am_i_too_fat)
+end
+
+
 
 
 
